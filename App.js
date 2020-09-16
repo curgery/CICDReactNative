@@ -1,15 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, TextInput } from 'react-native';
-
+import Greeting from './components/greeting';
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <TextInput value='Robert Glover' />
-      <Text>Welcome to CI/CD!</Text>
-      <StatusBar style='auto' />
-    </View>
-  );
+  return <Greeting />;
 }
 
 const styles = StyleSheet.create({
